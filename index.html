@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html form</title>
+    <style>
+      /* comment*/
+      label {
+        padding: 2px;
+      }
+
+      input {
+        padding: 2px;
+      }
+
+      .diagnosis {
+        width: 500px;
+      }
+
+      .treatment {
+        height: 120px;
+        width: 500px;
+      }
+      .signature {
+        height: 60px;
+        width: 300px;
+      }
+      .radio {
+        text-align: left;
+      }
+      .logo {
+        height: 90px;
+        max-width: 100px;
+        max-height: 100px;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <!--this is a comment-->
+
+  <body style="background-color: teal">
+    <img
+      class="logo center"
+      src="https://marketplace.canva.com/EAE8eSD-Zyo/1/0/1600w/canva-blue%2C-white-and-green-medical-care-logo-oz1ox2GedbU.jpg"
+      alt="Hospital logo"
+    />
+    <h1 style="text-align: center">Patient discharge form</h1>
+
+    <form style="padding: 20px; border: dotted black 5px">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" placeholder="First name" />
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" placeholder="Last name" />
+      <br />
+      <br />
+
+      <label for="date">Date admitted:</label><br />
+      <input type="date" id="date" />
+      <label for="reason">Reason</label>
+      <input type="text" id="reason" placeholder="State reason" />
+      <br />
+      <br />
+
+      <label for="diagnosis">Diagnosis at internment</label><br />
+      <input
+        type="text"
+        id="diagnosis"
+        class="diagnosis"
+        placeholder="Diagnosis"
+      />
+      <br />
+      <br />
+
+      <label for="treatment">Please describe the treatment taken</label>
+      <br />
+      <input type="text" id="treatment" class="treatment" />\
+      <br />
+      <br />
+
+      <label for="date">Date Discharged:</label><br />
+      <input type="date" id="date" />
+      <br />
+      <br />
+
+      <div class="radio">
+        <p>Is this discharge approved by the physician?</p>
+        <input type="radio" id="Yes" name="option" value="Yes" />
+        <label for="Yes">Yes</label>
+        <input type="radio" id="No" name="option" value="No" />
+        <label for="No">No</label>
+        <br />
+      </div>
+
+      <div class="Reason">
+        <p>Reason for discharge</p>
+        <input type="radio" id="No" name="option" value="No" />
+        <label for="deceased">Patient deceased</label>
+        <input type="radio" id="No" name="option" value="No" />
+        <label for="No">Patient treated</label>
+        <br />
+        <input type="radio" id="No" name="option" value="No" />
+        <label for="deceased">Patient left against advice</label>
+        <input type="radio" id="No" name="option" value="No" />
+        <label for="No">Patient treated</label>
+        <br />
+      </div>
+      <p>Is future treatment needed?</p>
+      <input type="radio" id="Yes" name="option" value="Yes" />
+      <label for="Yes">Yes</label>
+      <input type="radio" id="No" name="option" value="No" />
+      <label for="No">No</label>
+
+      <p>Was patient prescribed medication?</p>
+      <input type="radio" id="Yes" name="option" value="Yes" />
+      <label for="Yes">Yes</label>
+      <input type="radio" id="No" name="option" value="No" />
+      <label for="No">No</label>
+      <br />
+
+      <p><b>Discharging physician's name</b></p>
+      <label for="fname"></label>
+      <input type="text" id="fname" placeholder="First name" />
+      <label for="lname"></label>
+      <input type="text" id="lname" placeholder="Last name" />
+      <br />
+      <br />
+
+      <label for="signature">Signature</label>
+      <br />
+      <input type="text" id="treatment" class="signature" />\
+      <br />
+      <br />
+
+      <input type="submit" value="submit" />
+    </form>
+
+    <p>Link to reference image</p>
+    <a
+      href="https://abcsubmit.com/site/wp-content/uploads/2021/03/the-generated-fillable-PDF-using-AbcSubmit.jpg"
+      target="_blank"
+      >Click here</a
+    >
+  </body>
+</html>
